@@ -56,12 +56,10 @@ Ensure the port in ```.vscode/tasks.json``` is same as the vite opening port.
 }
 ```
 
-use ```alt+shift+b``` to open browser
-Inline screen size is given by ```./src/utils/Screen.svelte``` component.
+use ```alt+shift+b``` to open browser <br>
+Inline screen size can be helpful when developing, provided by ```./src/utils/Screen.svelte``` component.
 
 ### vite enviromental variables
 We can access the ```.env``` variables using ```import.meta.env.VITE_KEY_NAME```
 
-> **Warning**
->
-> The enviromental variables given here in ```.env``` directly exposed in js code in client app.
+> :warning: **When using .env like this in front end code**: It will be directly exposed in js code!
